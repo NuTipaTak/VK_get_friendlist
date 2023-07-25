@@ -4,18 +4,13 @@ import csv
 import json
 from typing import Union
 from datetime import datetime
-#нет вводной функции, других типов файлов в которые нужны отчеты.!!!
-#Авторизационный токен;
-#ID пользователя, для которого генерируем отчет;
-#Формат выходного файла. По умолчанию — CSV;
-#Путь к выходному файлу. По умолчанию — файл с именем report в текущей директории;
+
 
 class VKFriends:
     count: int = -1
     items: Union[list[int], list[dict[str, any]]]
     def __init__(self):
         self.items = []
-
 
 def start() ->VKFriends:
     print("Введите входную информацию")
